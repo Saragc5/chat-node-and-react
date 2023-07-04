@@ -1,7 +1,7 @@
 import { io } from 'socket.io-client'
 import './App.css'
 import { useEffect, useState } from 'react'
-import { LiMessage, UlMessage } from './msg-components';
+import { Title, LiMessage, UlMessage, InputMessage , ButtonSend} from './msg-components';
 
 //este es el puerto del servidor
 const socket = io("http://localhost:5000")
@@ -45,19 +45,19 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{isConnected ? "conectado" : "no conectado"}</h1>
+      <Title>{isConnected ? "CONNECTED" : "NO CONNECTED"}</Title>
       <UlMessage>
       {messages.map((message) =>(
         <LiMessage>{message.user}: {message.message}</LiMessage>
 
       ))}
       </UlMessage>
-      <input 
+      <InputMessage 
         type='text'
         onChange={e => setNewMessage(e.target.value)}
       />
-       <button
-       onClick={sendMessage}>Send</button>
+       <ButtonSend
+       onClick={sendMessage}>Send</ButtonSend>
     </div>
   )
 }
