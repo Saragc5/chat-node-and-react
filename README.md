@@ -5,3 +5,13 @@ A simple chat created with ReactJs and NodeJS and using Websockets technology wi
 For the styling I have used styled-components library.
 
 Inspired in Garaje Code Pills' Tutorials.
+
+### To run the project
+
+Clone the project
+
+Go in Terminal to front file and run : npm run dev
+
+Go in Terminal to server file and run: np run dev
+
+Start to play!

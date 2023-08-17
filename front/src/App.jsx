@@ -41,7 +41,11 @@ function App() {
       user: socket.id,
       message: newMessage
     })
+    
+
   }
+
+ 
 
   return (
     <div className="App">
@@ -53,6 +57,7 @@ function App() {
       ))}
       </UlMessage>
       <InputMessage 
+        id="myInput"
         type='text'
         onChange={e => setNewMessage(e.target.value)}
       />
