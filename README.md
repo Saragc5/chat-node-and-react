@@ -10,8 +10,8 @@ Inspired in Garaje Code Pills' Tutorials.
 
 Clone the project
 
-Go in Terminal to "front" file and run : npm run dev
+Go in Terminal to **front** file and run : **npm run dev**
 
-Go in Terminal to "server" file and run: npm run dev
+Go in Terminal to **server** file and run: **npm run dev**
 
 Start to play!
